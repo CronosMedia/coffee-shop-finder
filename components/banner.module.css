@@ -1,0 +1,120 @@
+.container {
+	margin-bottom: 6rem;
+}
+
+.title {
+	letter-spacing: -0.015em;
+	font-weight: 700;
+	color: var(--baby-powder);
+
+	font-size: 3rem;
+	line-height: 1;
+}
+
+.subtitle {
+	margin-top: 0.75rem;
+	font-size: 1.5rem;
+	line-height: 2rem;
+}
+
+.buttonWrapper {
+	margin-top: 1.25rem;
+}
+
+.button {
+	background-color: var(--oxford-blue);
+	color: var(--baby-powder);
+	cursor: pointer;
+	outline: 0;
+	border: 1px solid var(--baby-powder);
+	padding: 1rem 2.5rem;
+	font-family: "Poppins", sans-serif;
+	font-size: 1.125rem;
+	line-height: 1.75rem;
+	border-radius: 0.5rem;
+	transition: 0.4s ease-in-out;
+}
+
+.button:hover {
+	background-color: #fff;
+	color: var(--oxford-blue);
+}
+
+/**
+BreakPoints:
+------------
+sm: min-width: 640px; //small device
+md: min-width: 768px; //medium device
+lg: min-width: 1024px; //large device
+xl: min-width: 1280px; //extra large device
+2xl: min-width: 1536px; //2X extra large device
+
+**/
+
+/* sm breakpoint */
+
+@media (min-width: 640px) {
+	.title {
+		font-size: 3rem;
+		line-height: 1;
+	}
+
+	.subtitle {
+		margin-top: 1.25rem;
+		max-width: 36rem;
+	}
+
+	.buttonWrapper {
+		display: flex;
+		margin-top: 2rem;
+	}
+}
+
+/* md breakpoint */
+
+@media (min-width: 768px) {
+	.title {
+		font-size: 3.75rem;
+		line-height: 1;
+	}
+
+	.subtitle {
+		margin-top: 1rem;
+	}
+
+	.button {
+		padding: 1rem 2.5rem;
+		font-size: 1.125rem;
+		line-height: 1.75rem;
+	}
+}
+
+/* lg breakpoint */
+
+@media (min-width: 1024px) {
+	.container {
+		text-align: left;
+	}
+
+	.title {
+		font-size: 4.5rem /* 72px */;
+		line-height: 1;
+	}
+
+	.subTitle {
+		margin-left: 0px;
+		margin-right: 0px;
+	}
+
+	.buttonWrapper {
+		justify-content: flex-start;
+	}
+}
+
+/* xl breakpoint */
+
+@media (min-width: 1280px) {
+	.title {
+		display: inline;
+	}
+}
