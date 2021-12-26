@@ -1,13 +1,11 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
-
 :root {
 	--barn-red: #780000ff;
 	--lava: #c22027ff;
 	--oxford-blue: #001d3aff;
-	--prussian-blue: #003049ff;
+	--prussian-blue: #003049;
 	--rich-black-fogra-29: #000c1eff;
-	--baby-powder: #fcfff7ff;
-	--air-superiority-blue: #669bbcff;
+	--baby-powder: #fbfff5;
+	--air-superiority-blue: #669bbc;
 }
 
 html,
@@ -26,4 +24,49 @@ a {
 
 * {
 	box-sizing: border-box;
+}
+
+/* p {
+	font-weight: 500;
+} */
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+hr,
+p,
+pre {
+	margin: 0;
+}
+
+button {
+	background-color: transparent;
+	background-image: none;
+	font-weight: 500;
+}
+
+button:focus {
+	outline: 1px dotted;
+	outline: 5px auto -webkit-focus-ring-color;
+}
+
+/* glass-morphism */
+.glass {
+	background: rgba(102, 155, 188, 0.65);
+	box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+	backdrop-filter: blur(4px);
+	-webkit-backdrop-filter: blur(4px);
+	border-radius: 0.75rem;
+	transition: all 0.5s ease-in-out;
+}
+
+.glass:hover {
+	background: rgba(102, 155, 188, 0.85);
+	box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+	backdrop-filter: blur(4px);
+	-webkit-backdrop-filter: blur(4px);
+	border-radius: 0.75rem;
 }
