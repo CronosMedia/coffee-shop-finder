@@ -1,0 +1,125 @@
+.layout {
+	min-height: 100vh;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin: auto;
+	padding: 2rem 1.5rem;
+}
+
+.heading {
+	margin: 3rem auto;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.backToHomeLink {
+	cursor: pointer;
+	border: 1px solid var(--baby-powder);
+	padding: 1rem 1.75rem;
+	font-size: 1.5rem;
+	text-align: center;
+	max-width: 100%;
+	border-radius: 0.75rem;
+	transition: all 0.5s ease-in-out;
+}
+
+.backToHomeLink:hover {
+	background-color: var(--baby-powder);
+	color: var(--prussian-blue);
+}
+
+.backToHomeButton {
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+	margin: auto;
+}
+
+.name {
+	font-size: 3rem;
+	font-weight: 600;
+	/* text-transform: uppercase; */
+}
+
+.cardImageWrapper {
+	border-top-left-radius: 0.75rem /* 12px */;
+	border-top-right-radius: 0.75rem;
+	display: inline-block;
+	overflow: hidden;
+}
+
+.storeImg {
+	position: absolute;
+	border-top-left-radius: 0.75rem /* 12px */;
+	border-top-right-radius: 0.75rem;
+	object-fit: cover;
+	transition: all 0.5s ease-in-out;
+}
+
+.storeImg:hover {
+	transform: scale(1.1);
+	overflow: hidden;
+}
+
+.coffeeShopCardInfo {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	padding: 1rem 2rem;
+}
+
+.iconWrapper {
+	display: flex;
+	align-items: center;
+	margin-bottom: 0.75rem;
+	font-size: 1.2rem;
+	font-weight: 500;
+}
+
+.text {
+	margin-left: 2rem;
+}
+
+.upvoteButton {
+	width: 100%;
+	padding: 1.5rem 3rem;
+	border: 1px solid var(--baby-powder);
+	border-radius: 0.75rem;
+	transition: all 0.5s ease-in-out;
+	font-size: 1.8rem;
+	text-transform: uppercase;
+	font-weight: 700;
+	color: var(--baby-powder);
+	background-color: var(--prussian-blue);
+	cursor: pointer;
+	margin-top: 0.75rem;
+}
+
+.upvoteButton:hover {
+	color: var(--prussian-blue);
+	background-color: var(--baby-powder);
+}
+
+/** Breakpoints:
+  sm: min-width: 640px;
+  md: min-width: 768px;
+  lg: min-width: 1024px;
+  xl: min-width: 1280px;
+  2xl: min-width: 1536px;
+**/
+@media (min-width: 1024px) {
+	.layout {
+		padding: 3rem 0;
+	}
+}
+
+@media (min-width: 1280px) {
+	.backToHomeLink {
+		max-width: 40%;
+		border-radius: 0.75rem;
+		transition: all 0.5s ease-in-out;
+	}
+}
